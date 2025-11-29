@@ -8,7 +8,6 @@
     $likesFile    = __DIR__ . '/likes_data.json';
     $competitions = __DIR__ . '/competition.json';
     $stateFile    = __DIR__ . '/steps.json';
-    $likesFile    = __DIR__ . '/likes_data.json';
 
 
     $input = file_get_contents('php://input');
@@ -147,7 +146,65 @@
         ]
     ];
 
+    $competition = getActiveCompetition($chat_id);
     
+    sendPost($chat_id,  $postText, $postPhoto, $keyboard);
+
+    $callback = $update['callback_query'] ?? null;
+
+    if ($callback && $callback['data'] === 'like') {
+        $user_id = $callback['from']['id'];
+
+        if (!in_array($user_id, $likesData['users'])) 
+        {
+            if (!isUserMember($competition["main_channel"], $user_id, $bot_token)) {
+                file_get_contents("https://api.telegram.org/bot$bot_token/answerCallbackQuery?" . http_build_query([
+                    'callback_query_id' => $callbackId,
+                    'text' => "❌ Siz asosiy kanalga a'zo emassiz!",
+                    'show_alert' => true
+                ]));
+                exit;
+            }
+
+            foreach ($competition['required_channels'] as $ch) {
+                if (!isUserMember($ch, $user_id, $bot_token)) {
+                    file_get_contents("https://api.telegram.org/bot$bot_token/answerCallbackQuery?" . http_build_query([
+                        'callback_query_id' => $callbackId,
+                        'text' => "❌ Siz barcha majburiy kanallarga a'zo bo'lishingiz kerak!",
+                        'show_alert' => true
+                    ]));
+                    exit;
+                }
+            }
+
+            $likesData['total_likes']++;
+            $likesData['users'][] = $user_id;
+
+            file_put_contents($likesFile, json_encode($likesData, JSON_PRETTY_PRINT));
+
+            // Tugma textini yangilash
+            $message_id = $callback['message']['message_id'];
+            $chat_id_cb = $callback['message']['chat']['id'];
+
+            $newKeyboard = [
+                'inline_keyboard' => [
+                    [['text' => "Like {$likesData['total_likes']}", 'callback_data' => 'like']]
+                ]
+            ];
+
+            file_get_contents("https://api.telegram.org/bot$bot_token/editMessageReplyMarkup?" . http_build_query([
+                'chat_id' => $chat_id_cb,
+                'message_id' => $message_id,
+                'reply_markup' => json_encode($newKeyboard)
+            ]));
+        } else {
+            file_get_contents("https://api.telegram.org/bot$bot_token/answerCallbackQuery?" . http_build_query([
+                'callback_query_id' => $callbackId,
+                'text' => "Rahmat! Siz allaqachon like bosgansiz.",
+                'show_alert' => true
+            ]));
+        }
+    }    
 
     
 

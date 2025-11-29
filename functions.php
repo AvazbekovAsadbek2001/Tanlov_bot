@@ -256,3 +256,38 @@
         }
     }
 
+    function getActiveCompetition($chat_id) {
+        global $competitions;
+
+        if (!file_exists($competitions)) {
+            return null;
+        }
+
+        $data = json_decode(file_get_contents($competitions), true);
+
+        foreach ($data as $item) {
+            if ($item['chat_id'] == $chat_id && ($item['active'] ?? false) === true) {
+                return $item;
+            }
+        }
+
+        return null;
+    }
+
+    function isUserMember($channel, $user_id, $bot_token)
+    {
+        $channel = ltrim($channel, '@');
+
+        $url = "https://api.telegram.org/bot$bot_token/getChatMember?chat_id=$channel&user_id=$user_id";
+        $response = json_decode(file_get_contents($url), true);
+
+        if (!$response || $response["ok"] === false) {
+            return false;
+        }
+
+        $status = $response["result"]["status"];
+
+        return in_array($status, ["creator", "administrator", "member"]);
+    }
+
+
