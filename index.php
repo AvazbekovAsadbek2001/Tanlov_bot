@@ -67,7 +67,7 @@
                     $msg .= "Yuborilagan kanal: ".  "https://t.me/". ltrim($comp["main_channel"], '@')."\n";
                     $msg .= "Majbutoy kanallar : \n";
                     foreach ($comp['required_channels'] as $item) {
-                        $msg .= "https://t.me/". ltrim($item, '@');
+                        $msg .= "https://t.me/". ltrim($item, '@'). "\n";
                     }
                 }
 
@@ -128,34 +128,97 @@
 
     //--------------------------------------------------------- send post ---------------------------------------------------------
     
-    $postText = "";
-    $postPhoto = "";
+    if (isset($update['message'])) {
+        $postText = "";
+        $postPhoto = "";
 
-    if (isset($update['message']['photo'])) {
-        $postPhoto = end($update['message']['photo'])['file_id'];
-        $postText = $update['message']['caption'] ?? ""; 
-    } elseif (isset($update['message']['text'])) {
-        $postText = $update['message']['text'];
-    };
+        if (isset($update['message']['photo'])) {
+            $postPhoto = end($update['message']['photo'])['file_id'];
+            $postText = $update['message']['caption'] ?? ""; 
+        } elseif (isset($update['message']['text'])) {
+            $postText = $update['message']['text'];
+        };
 
-    $likesData = file_exists($likesFile) ? json_decode(file_get_contents($likesFile), true) : ['total_likes' => 0];
+        $likesData = file_exists($likesFile) ? json_decode(file_get_contents($likesFile), true) : ['total_likes' => 0];
 
-    $keyboard = [
-        'inline_keyboard' => [
-            [['text' => "Like {$likesData['total_likes']}", 'callback_data' => 'like']]
-        ]
-    ];
+        $keyboard = [
+            'inline_keyboard' => [
+                [['text' => "Like {$likesData['total_likes']}", 'callback_data' => 'like']]
+            ]
+        ];
 
-    $competition = getActiveCompetition($chat_id);
-    
-    sendPost($chat_id,  $postText, $postPhoto, $keyboard);
+        $competition = getActiveCompetition($chat_id);
+        
+        sendPost($competition['main_channel'],  $postText, $postPhoto);
+    }
 
-    $callback = $update['callback_query'] ?? null;
+    if (isset($update['callback_query']) && $update['callback_query']['data'] === 'like') 
+    {
+        $callback   = $update['callback_query'];
+        $callbackId = $callback['id'];
+        $user_id    = $callback['from']['id'];
+        $message_id = $callback['message']['message_id'];
+        $chat_id_cb = $callback['message']['chat']['id'];
 
-    if ($callback && $callback['data'] === 'like') {
-        $user_id = $callback['from']['id'];
+        $likesData = file_exists($likesFile) 
+            ? json_decode(file_get_contents($likesFile), true) 
+            : ['total_likes' => 0, 'users' => []];
 
-        if (!in_array($user_id, $likesData['users'])) 
+        if (in_array($user_id, $likesData['users'] ?? [])) 
+        {
+            file_get_contents("https://api.telegram.org/bot$bot_token/answerCallbackQuery?" . http_build_query([
+                'callback_query_id' => $callbackId,
+                'text'              => "Rahmat! Siz allaqachon like bosgansiz.",
+                'show_alert'        => true
+            ]));
+            exit;
+        }
+
+        // Obuna tekshirish
+        if (!isUserMember($competition["main_channel"], $user_id, $bot_token)) {
+            file_get_contents("https://api.telegram.org/bot$bot_token/answerCallbackQuery?" . http_build_query([
+                'callback_query_id' => $callbackId,
+                'text'              => "Siz asosiy kanalga a'zo emassiz!",
+                'show_alert'        => true
+            ]));
+            exit;
+        }
+
+        foreach ($competition['required_channels'] as $ch) {
+            if (!isUserMember($ch, $user_id, $bot_token)) {
+                file_get_contents("https://api.telegram.org/bot$bot_token/answerCallbackQuery?" . http_build_query([
+                    'callback_query_id' => $callbackId,
+                    'text'              => "Siz barcha majburiy kanallarga a'zo bo'lishingiz kerak!",
+                    'show_alert'        => true
+                ]));
+                exit;
+            }
+        }
+
+        if (in_array($user_id, $likesData['users'] ?? [])) 
+        {
+            file_get_contents("https://api.telegram.org/bot$bot_token/answerCallbackQuery?" . http_build_query([
+                'callback_query_id' => $callbackId,
+                'text'              => "Rahmat! Siz allaqachon like bosgansiz.",
+                'show_alert'        => true
+            ]));
+            exit;
+        }
+
+        // Obuna tekshirish
+        if (!isUserMember($competition["main_channel"], $user_id, $bot_token)) {
+            file_get_contents("https://api.telegram.org/bot$bot_token/answerCallbackQuery?" . http_build_query([
+                'callback_query_id' => $callbackId,
+                'text'              => "Siz asosiy kanalga a'zo emassiz!",
+                'show_alert'        => true
+            ]));
+            exit;
+        }
+        
+        
+        
+        
+            if (!in_array($user_id, $likesData['users'])) 
         {
             if (!isUserMember($competition["main_channel"], $user_id, $bot_token)) {
                 file_get_contents("https://api.telegram.org/bot$bot_token/answerCallbackQuery?" . http_build_query([

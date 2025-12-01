@@ -39,8 +39,6 @@
 
         $title = $states[$chat_id]['title'];
 
-        sendMessage($chat_id, $title);
-
         if (!isset($title)) return true;
 
         switch ($title) {
@@ -125,7 +123,7 @@
                     exit;
                 }
 
-                if (!checkChannelAdmin($text)) {
+                if (!checkChannelAdmin($text) || $text[0] == '@') {
                     sendMessage($chat_id, "Bot kanalga Admin emas yoki kanalda a'zoligi yo'q!\nIltimos tekshirib qaytatdan jo'nating!");
                     exit; 
                 }
@@ -214,9 +212,9 @@
     }
 
     function activateCompetition($chat_id, $id) {
-        $file = "competitions.json";
+        global $competitions;
 
-        $data = file_exists($file) ? json_decode(file_get_contents($file), true) : [];
+        $data = file_exists($competitions) ? json_decode(file_get_contents($competitions), true) : [];
 
         foreach ($data as &$item) {
             if ($item['chat_id'] == $chat_id) {
@@ -228,7 +226,9 @@
             }
         }
 
-        file_put_contents($file, json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+        file_put_contents($competitions, json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+
+        sendMessage($chat_id, 'Bundan keyingi barcha habarlar asosiy kanalga post sifatida jo`natiladi');
 
         return true;
     }

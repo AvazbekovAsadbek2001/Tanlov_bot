@@ -1,12 +1,13 @@
 [
     {
-        "id": "69280607b7243",
+        "id": "692d1b09bcd99",
         "chat_id": 7201090018,
-        "title": "1-tanlov",
+        "title": "test",
         "active": true,
-        "main_channel": "@newchannel001111",
+        "main_channel": "@requiredchannel",
         "required_channels": [
-            "@requiredchannel"
+            "newchannel001111",
+            "@newchannel001111"
         ]
     }
 ]
