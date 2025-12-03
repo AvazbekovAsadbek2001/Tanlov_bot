@@ -1,13 +1,12 @@
 [
     {
-        "id": "692d1b09bcd99",
+        "id": "692fc9f2dbe46",
         "chat_id": 7201090018,
         "title": "test",
         "active": true,
-        "main_channel": "@requiredchannel",
+        "main_channel": "@newchannel001111",
         "required_channels": [
-            "newchannel001111",
-            "@newchannel001111"
+            "@requiredchannel"
         ]
     }
 ]

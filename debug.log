@@ -1,0 +1,1285 @@
+[2025-12-03 10:54:08] YANGI UPDATE KELDI
+{
+    "update_id": 584501202,
+    "callback_query": {
+        "id": "3258330013664498385",
+        "from": {
+            "id": 7201090018,
+            "is_bot": false,
+            "first_name": "Asadbek",
+            "username": "bek2001_1",
+            "language_code": "ru"
+        },
+        "message": {
+            "message_id": 15,
+            "sender_chat": {
+                "id": -1003264838546,
+                "title": "new_channel_main",
+                "username": "newchannel001111",
+                "type": "channel"
+            },
+            "chat": {
+                "id": -1003264838546,
+                "title": "new_channel_main",
+                "username": "newchannel001111",
+                "type": "channel"
+            },
+            "date": 1764746958,
+            "photo": [
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADcwADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUl4",
+                    "file_size": 1157,
+                    "width": 90,
+                    "height": 60
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADbQADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUly",
+                    "file_size": 13013,
+                    "width": 320,
+                    "height": 212
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADeAADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUl9",
+                    "file_size": 48875,
+                    "width": 800,
+                    "height": 531
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADeQADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUl-",
+                    "file_size": 81243,
+                    "width": 1244,
+                    "height": 826
+                }
+            ],
+            "caption": "sadasdsadas",
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "text": "Like 0",
+                            "callback_data": "like_temp"
+                        }
+                    ]
+                ]
+            }
+        },
+        "chat_instance": "-3578483412999375008",
+        "data": "like_temp"
+    }
+}
+
+[2025-12-03 10:54:08] Update qabul qilindi
+
+[2025-12-03 10:54:08] Foydalanuvchi
+{
+    "chat_id": null,
+    "user_id": null,
+    "text": ""
+}
+
+[2025-12-03 10:54:08] CALLBACK QUERY
+{
+    "id": "3258330013664498385",
+    "user": 7201090018,
+    "data": "like_temp"
+}
+
+[03-Dec-2025 10:54:09 Europe/Berlin] PHP Warning:  file_get_contents(https://api.telegram.org/bot6538478280:AAGbD5Jc8rUG73sPpdKHVQpwQPM3Q-HtjBE/getChatMember?chat_id=newchannel001111&amp;user_id=7201090018): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\xampp\htdocs\Tanlov_bot\functions.php on line 282
+[03-Dec-2025 10:54:10 Europe/Berlin] PHP Warning:  file_get_contents(https://api.telegram.org/bot6538478280:AAGbD5Jc8rUG73sPpdKHVQpwQPM3Q-HtjBE/getChatMember?chat_id=requiredchannel&amp;user_id=7201090018): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\xampp\htdocs\Tanlov_bot\functions.php on line 282
+[03-Dec-2025 10:54:10 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function answerCallbackQuery() in C:\xampp\htdocs\Tanlov_bot\index.php:110
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Tanlov_bot\index.php on line 110
+[2025-12-03 10:54:10] YANGI UPDATE KELDI
+{
+    "update_id": 584501202,
+    "callback_query": {
+        "id": "3258330013664498385",
+        "from": {
+            "id": 7201090018,
+            "is_bot": false,
+            "first_name": "Asadbek",
+            "username": "bek2001_1",
+            "language_code": "ru"
+        },
+        "message": {
+            "message_id": 15,
+            "sender_chat": {
+                "id": -1003264838546,
+                "title": "new_channel_main",
+                "username": "newchannel001111",
+                "type": "channel"
+            },
+            "chat": {
+                "id": -1003264838546,
+                "title": "new_channel_main",
+                "username": "newchannel001111",
+                "type": "channel"
+            },
+            "date": 1764746958,
+            "photo": [
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADcwADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUl4",
+                    "file_size": 1157,
+                    "width": 90,
+                    "height": 60
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADbQADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUly",
+                    "file_size": 13013,
+                    "width": 320,
+                    "height": 212
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADeAADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUl9",
+                    "file_size": 48875,
+                    "width": 800,
+                    "height": 531
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADeQADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUl-",
+                    "file_size": 81243,
+                    "width": 1244,
+                    "height": 826
+                }
+            ],
+            "caption": "sadasdsadas",
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "text": "Like 0",
+                            "callback_data": "like_temp"
+                        }
+                    ]
+                ]
+            }
+        },
+        "chat_instance": "-3578483412999375008",
+        "data": "like_temp"
+    }
+}
+
+[2025-12-03 10:54:10] Update qabul qilindi
+
+[2025-12-03 10:54:10] Foydalanuvchi
+{
+    "chat_id": null,
+    "user_id": null,
+    "text": ""
+}
+
+[2025-12-03 10:54:10] CALLBACK QUERY
+{
+    "id": "3258330013664498385",
+    "user": 7201090018,
+    "data": "like_temp"
+}
+
+[03-Dec-2025 10:54:12 Europe/Berlin] PHP Warning:  file_get_contents(https://api.telegram.org/bot6538478280:AAGbD5Jc8rUG73sPpdKHVQpwQPM3Q-HtjBE/getChatMember?chat_id=newchannel001111&amp;user_id=7201090018): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\xampp\htdocs\Tanlov_bot\functions.php on line 282
+[03-Dec-2025 10:54:13 Europe/Berlin] PHP Warning:  file_get_contents(https://api.telegram.org/bot6538478280:AAGbD5Jc8rUG73sPpdKHVQpwQPM3Q-HtjBE/getChatMember?chat_id=requiredchannel&amp;user_id=7201090018): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\xampp\htdocs\Tanlov_bot\functions.php on line 282
+[03-Dec-2025 10:54:13 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function answerCallbackQuery() in C:\xampp\htdocs\Tanlov_bot\index.php:110
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Tanlov_bot\index.php on line 110
+[2025-12-03 10:54:15] YANGI UPDATE KELDI
+{
+    "update_id": 584501202,
+    "callback_query": {
+        "id": "3258330013664498385",
+        "from": {
+            "id": 7201090018,
+            "is_bot": false,
+            "first_name": "Asadbek",
+            "username": "bek2001_1",
+            "language_code": "ru"
+        },
+        "message": {
+            "message_id": 15,
+            "sender_chat": {
+                "id": -1003264838546,
+                "title": "new_channel_main",
+                "username": "newchannel001111",
+                "type": "channel"
+            },
+            "chat": {
+                "id": -1003264838546,
+                "title": "new_channel_main",
+                "username": "newchannel001111",
+                "type": "channel"
+            },
+            "date": 1764746958,
+            "photo": [
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADcwADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUl4",
+                    "file_size": 1157,
+                    "width": 90,
+                    "height": 60
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADbQADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUly",
+                    "file_size": 13013,
+                    "width": 320,
+                    "height": 212
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADeAADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUl9",
+                    "file_size": 48875,
+                    "width": 800,
+                    "height": 531
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADeQADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUl-",
+                    "file_size": 81243,
+                    "width": 1244,
+                    "height": 826
+                }
+            ],
+            "caption": "sadasdsadas",
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "text": "Like 0",
+                            "callback_data": "like_temp"
+                        }
+                    ]
+                ]
+            }
+        },
+        "chat_instance": "-3578483412999375008",
+        "data": "like_temp"
+    }
+}
+
+[2025-12-03 10:54:15] Update qabul qilindi
+
+[2025-12-03 10:54:15] Foydalanuvchi
+{
+    "chat_id": null,
+    "user_id": null,
+    "text": ""
+}
+
+[2025-12-03 10:54:15] CALLBACK QUERY
+{
+    "id": "3258330013664498385",
+    "user": 7201090018,
+    "data": "like_temp"
+}
+
+[03-Dec-2025 10:54:16 Europe/Berlin] PHP Warning:  file_get_contents(https://api.telegram.org/bot6538478280:AAGbD5Jc8rUG73sPpdKHVQpwQPM3Q-HtjBE/getChatMember?chat_id=newchannel001111&amp;user_id=7201090018): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\xampp\htdocs\Tanlov_bot\functions.php on line 282
+[03-Dec-2025 10:54:17 Europe/Berlin] PHP Warning:  file_get_contents(https://api.telegram.org/bot6538478280:AAGbD5Jc8rUG73sPpdKHVQpwQPM3Q-HtjBE/getChatMember?chat_id=requiredchannel&amp;user_id=7201090018): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\xampp\htdocs\Tanlov_bot\functions.php on line 282
+[03-Dec-2025 10:54:17 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function answerCallbackQuery() in C:\xampp\htdocs\Tanlov_bot\index.php:110
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Tanlov_bot\index.php on line 110
+[2025-12-03 10:54:22] YANGI UPDATE KELDI
+{
+    "update_id": 584501202,
+    "callback_query": {
+        "id": "3258330013664498385",
+        "from": {
+            "id": 7201090018,
+            "is_bot": false,
+            "first_name": "Asadbek",
+            "username": "bek2001_1",
+            "language_code": "ru"
+        },
+        "message": {
+            "message_id": 15,
+            "sender_chat": {
+                "id": -1003264838546,
+                "title": "new_channel_main",
+                "username": "newchannel001111",
+                "type": "channel"
+            },
+            "chat": {
+                "id": -1003264838546,
+                "title": "new_channel_main",
+                "username": "newchannel001111",
+                "type": "channel"
+            },
+            "date": 1764746958,
+            "photo": [
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADcwADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUl4",
+                    "file_size": 1157,
+                    "width": 90,
+                    "height": 60
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADbQADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUly",
+                    "file_size": 13013,
+                    "width": 320,
+                    "height": 212
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADeAADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUl9",
+                    "file_size": 48875,
+                    "width": 800,
+                    "height": 531
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADeQADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUl-",
+                    "file_size": 81243,
+                    "width": 1244,
+                    "height": 826
+                }
+            ],
+            "caption": "sadasdsadas",
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "text": "Like 0",
+                            "callback_data": "like_temp"
+                        }
+                    ]
+                ]
+            }
+        },
+        "chat_instance": "-3578483412999375008",
+        "data": "like_temp"
+    }
+}
+
+[2025-12-03 10:54:22] Update qabul qilindi
+
+[2025-12-03 10:54:22] Foydalanuvchi
+{
+    "chat_id": null,
+    "user_id": null,
+    "text": ""
+}
+
+[2025-12-03 10:54:22] CALLBACK QUERY
+{
+    "id": "3258330013664498385",
+    "user": 7201090018,
+    "data": "like_temp"
+}
+
+[03-Dec-2025 10:54:23 Europe/Berlin] PHP Warning:  file_get_contents(https://api.telegram.org/bot6538478280:AAGbD5Jc8rUG73sPpdKHVQpwQPM3Q-HtjBE/getChatMember?chat_id=newchannel001111&amp;user_id=7201090018): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\xampp\htdocs\Tanlov_bot\functions.php on line 282
+[03-Dec-2025 10:54:24 Europe/Berlin] PHP Warning:  file_get_contents(https://api.telegram.org/bot6538478280:AAGbD5Jc8rUG73sPpdKHVQpwQPM3Q-HtjBE/getChatMember?chat_id=requiredchannel&amp;user_id=7201090018): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\xampp\htdocs\Tanlov_bot\functions.php on line 282
+[03-Dec-2025 10:54:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function answerCallbackQuery() in C:\xampp\htdocs\Tanlov_bot\index.php:110
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Tanlov_bot\index.php on line 110
+[2025-12-03 10:54:32] YANGI UPDATE KELDI
+{
+    "update_id": 584501202,
+    "callback_query": {
+        "id": "3258330013664498385",
+        "from": {
+            "id": 7201090018,
+            "is_bot": false,
+            "first_name": "Asadbek",
+            "username": "bek2001_1",
+            "language_code": "ru"
+        },
+        "message": {
+            "message_id": 15,
+            "sender_chat": {
+                "id": -1003264838546,
+                "title": "new_channel_main",
+                "username": "newchannel001111",
+                "type": "channel"
+            },
+            "chat": {
+                "id": -1003264838546,
+                "title": "new_channel_main",
+                "username": "newchannel001111",
+                "type": "channel"
+            },
+            "date": 1764746958,
+            "photo": [
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADcwADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUl4",
+                    "file_size": 1157,
+                    "width": 90,
+                    "height": 60
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADbQADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUly",
+                    "file_size": 13013,
+                    "width": 320,
+                    "height": 212
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADeAADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUl9",
+                    "file_size": 48875,
+                    "width": 800,
+                    "height": 531
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADeQADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUl-",
+                    "file_size": 81243,
+                    "width": 1244,
+                    "height": 826
+                }
+            ],
+            "caption": "sadasdsadas",
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "text": "Like 0",
+                            "callback_data": "like_temp"
+                        }
+                    ]
+                ]
+            }
+        },
+        "chat_instance": "-3578483412999375008",
+        "data": "like_temp"
+    }
+}
+
+[2025-12-03 10:54:32] Update qabul qilindi
+
+[2025-12-03 10:54:32] Foydalanuvchi
+{
+    "chat_id": null,
+    "user_id": null,
+    "text": ""
+}
+
+[2025-12-03 10:54:32] CALLBACK QUERY
+{
+    "id": "3258330013664498385",
+    "user": 7201090018,
+    "data": "like_temp"
+}
+
+[03-Dec-2025 10:54:33 Europe/Berlin] PHP Warning:  file_get_contents(https://api.telegram.org/bot6538478280:AAGbD5Jc8rUG73sPpdKHVQpwQPM3Q-HtjBE/getChatMember?chat_id=newchannel001111&amp;user_id=7201090018): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\xampp\htdocs\Tanlov_bot\functions.php on line 282
+[03-Dec-2025 10:54:34 Europe/Berlin] PHP Warning:  file_get_contents(https://api.telegram.org/bot6538478280:AAGbD5Jc8rUG73sPpdKHVQpwQPM3Q-HtjBE/getChatMember?chat_id=requiredchannel&amp;user_id=7201090018): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\xampp\htdocs\Tanlov_bot\functions.php on line 282
+[03-Dec-2025 10:54:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function answerCallbackQuery() in C:\xampp\htdocs\Tanlov_bot\index.php:110
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Tanlov_bot\index.php on line 110
+[2025-12-03 10:54:50] YANGI UPDATE KELDI
+{
+    "update_id": 584501202,
+    "callback_query": {
+        "id": "3258330013664498385",
+        "from": {
+            "id": 7201090018,
+            "is_bot": false,
+            "first_name": "Asadbek",
+            "username": "bek2001_1",
+            "language_code": "ru"
+        },
+        "message": {
+            "message_id": 15,
+            "sender_chat": {
+                "id": -1003264838546,
+                "title": "new_channel_main",
+                "username": "newchannel001111",
+                "type": "channel"
+            },
+            "chat": {
+                "id": -1003264838546,
+                "title": "new_channel_main",
+                "username": "newchannel001111",
+                "type": "channel"
+            },
+            "date": 1764746958,
+            "photo": [
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADcwADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUl4",
+                    "file_size": 1157,
+                    "width": 90,
+                    "height": 60
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADbQADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUly",
+                    "file_size": 13013,
+                    "width": 320,
+                    "height": 212
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADeAADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUl9",
+                    "file_size": 48875,
+                    "width": 800,
+                    "height": 531
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADeQADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUl-",
+                    "file_size": 81243,
+                    "width": 1244,
+                    "height": 826
+                }
+            ],
+            "caption": "sadasdsadas",
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "text": "Like 0",
+                            "callback_data": "like_temp"
+                        }
+                    ]
+                ]
+            }
+        },
+        "chat_instance": "-3578483412999375008",
+        "data": "like_temp"
+    }
+}
+
+[2025-12-03 10:54:50] Update qabul qilindi
+
+[2025-12-03 10:54:50] Foydalanuvchi
+{
+    "chat_id": null,
+    "user_id": null,
+    "text": ""
+}
+
+[2025-12-03 10:54:50] CALLBACK QUERY
+{
+    "id": "3258330013664498385",
+    "user": 7201090018,
+    "data": "like_temp"
+}
+
+[03-Dec-2025 10:54:52 Europe/Berlin] PHP Warning:  file_get_contents(https://api.telegram.org/bot6538478280:AAGbD5Jc8rUG73sPpdKHVQpwQPM3Q-HtjBE/getChatMember?chat_id=newchannel001111&amp;user_id=7201090018): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\xampp\htdocs\Tanlov_bot\functions.php on line 282
+[03-Dec-2025 10:54:53 Europe/Berlin] PHP Warning:  file_get_contents(https://api.telegram.org/bot6538478280:AAGbD5Jc8rUG73sPpdKHVQpwQPM3Q-HtjBE/getChatMember?chat_id=requiredchannel&amp;user_id=7201090018): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\xampp\htdocs\Tanlov_bot\functions.php on line 282
+[03-Dec-2025 10:54:53 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function answerCallbackQuery() in C:\xampp\htdocs\Tanlov_bot\index.php:110
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Tanlov_bot\index.php on line 110
+[2025-12-03 10:55:25] YANGI UPDATE KELDI
+{
+    "update_id": 584501202,
+    "callback_query": {
+        "id": "3258330013664498385",
+        "from": {
+            "id": 7201090018,
+            "is_bot": false,
+            "first_name": "Asadbek",
+            "username": "bek2001_1",
+            "language_code": "ru"
+        },
+        "message": {
+            "message_id": 15,
+            "sender_chat": {
+                "id": -1003264838546,
+                "title": "new_channel_main",
+                "username": "newchannel001111",
+                "type": "channel"
+            },
+            "chat": {
+                "id": -1003264838546,
+                "title": "new_channel_main",
+                "username": "newchannel001111",
+                "type": "channel"
+            },
+            "date": 1764746958,
+            "photo": [
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADcwADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUl4",
+                    "file_size": 1157,
+                    "width": 90,
+                    "height": 60
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADbQADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUly",
+                    "file_size": 13013,
+                    "width": 320,
+                    "height": 212
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADeAADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUl9",
+                    "file_size": 48875,
+                    "width": 800,
+                    "height": 531
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADeQADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUl-",
+                    "file_size": 81243,
+                    "width": 1244,
+                    "height": 826
+                }
+            ],
+            "caption": "sadasdsadas",
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "text": "Like 0",
+                            "callback_data": "like_temp"
+                        }
+                    ]
+                ]
+            }
+        },
+        "chat_instance": "-3578483412999375008",
+        "data": "like_temp"
+    }
+}
+
+[2025-12-03 10:55:25] Update qabul qilindi
+
+[2025-12-03 10:55:25] Foydalanuvchi
+{
+    "chat_id": null,
+    "user_id": null,
+    "text": ""
+}
+
+[2025-12-03 10:55:25] CALLBACK QUERY
+{
+    "id": "3258330013664498385",
+    "user": 7201090018,
+    "data": "like_temp"
+}
+
+[03-Dec-2025 10:55:26 Europe/Berlin] PHP Warning:  file_get_contents(https://api.telegram.org/bot6538478280:AAGbD5Jc8rUG73sPpdKHVQpwQPM3Q-HtjBE/getChatMember?chat_id=newchannel001111&amp;user_id=7201090018): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\xampp\htdocs\Tanlov_bot\functions.php on line 282
+[03-Dec-2025 10:55:27 Europe/Berlin] PHP Warning:  file_get_contents(https://api.telegram.org/bot6538478280:AAGbD5Jc8rUG73sPpdKHVQpwQPM3Q-HtjBE/getChatMember?chat_id=requiredchannel&amp;user_id=7201090018): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\xampp\htdocs\Tanlov_bot\functions.php on line 282
+[03-Dec-2025 10:55:27 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function answerCallbackQuery() in C:\xampp\htdocs\Tanlov_bot\index.php:110
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Tanlov_bot\index.php on line 110
+[2025-12-03 10:56:32] YANGI UPDATE KELDI
+{
+    "update_id": 584501202,
+    "callback_query": {
+        "id": "3258330013664498385",
+        "from": {
+            "id": 7201090018,
+            "is_bot": false,
+            "first_name": "Asadbek",
+            "username": "bek2001_1",
+            "language_code": "ru"
+        },
+        "message": {
+            "message_id": 15,
+            "sender_chat": {
+                "id": -1003264838546,
+                "title": "new_channel_main",
+                "username": "newchannel001111",
+                "type": "channel"
+            },
+            "chat": {
+                "id": -1003264838546,
+                "title": "new_channel_main",
+                "username": "newchannel001111",
+                "type": "channel"
+            },
+            "date": 1764746958,
+            "photo": [
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADcwADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUl4",
+                    "file_size": 1157,
+                    "width": 90,
+                    "height": 60
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADbQADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUly",
+                    "file_size": 13013,
+                    "width": 320,
+                    "height": 212
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADeAADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUl9",
+                    "file_size": 48875,
+                    "width": 800,
+                    "height": 531
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADeQADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUl-",
+                    "file_size": 81243,
+                    "width": 1244,
+                    "height": 826
+                }
+            ],
+            "caption": "sadasdsadas",
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "text": "Like 0",
+                            "callback_data": "like_temp"
+                        }
+                    ]
+                ]
+            }
+        },
+        "chat_instance": "-3578483412999375008",
+        "data": "like_temp"
+    }
+}
+
+[2025-12-03 10:56:32] Update qabul qilindi
+
+[2025-12-03 10:56:32] Foydalanuvchi
+{
+    "chat_id": null,
+    "user_id": null,
+    "text": ""
+}
+
+[2025-12-03 10:56:32] CALLBACK QUERY
+{
+    "id": "3258330013664498385",
+    "user": 7201090018,
+    "data": "like_temp"
+}
+
+[03-Dec-2025 10:56:33 Europe/Berlin] PHP Warning:  file_get_contents(https://api.telegram.org/bot6538478280:AAGbD5Jc8rUG73sPpdKHVQpwQPM3Q-HtjBE/getChatMember?chat_id=newchannel001111&amp;user_id=7201090018): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\xampp\htdocs\Tanlov_bot\functions.php on line 282
+[03-Dec-2025 10:56:33 Europe/Berlin] PHP Warning:  file_get_contents(https://api.telegram.org/bot6538478280:AAGbD5Jc8rUG73sPpdKHVQpwQPM3Q-HtjBE/getChatMember?chat_id=requiredchannel&amp;user_id=7201090018): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\xampp\htdocs\Tanlov_bot\functions.php on line 282
+[03-Dec-2025 10:56:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function answerCallbackQuery() in C:\xampp\htdocs\Tanlov_bot\index.php:110
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Tanlov_bot\index.php on line 110
+[2025-12-03 11:55:34] YANGI UPDATE KELDI
+{
+    "update_id": 584501203,
+    "callback_query": {
+        "id": "3258330016065307946",
+        "from": {
+            "id": 7201090018,
+            "is_bot": false,
+            "first_name": "Asadbek",
+            "username": "bek2001_1",
+            "language_code": "ru"
+        },
+        "message": {
+            "message_id": 15,
+            "sender_chat": {
+                "id": -1003264838546,
+                "title": "new_channel_main",
+                "username": "newchannel001111",
+                "type": "channel"
+            },
+            "chat": {
+                "id": -1003264838546,
+                "title": "new_channel_main",
+                "username": "newchannel001111",
+                "type": "channel"
+            },
+            "date": 1764746958,
+            "photo": [
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADcwADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUl4",
+                    "file_size": 1157,
+                    "width": 90,
+                    "height": 60
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADbQADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUly",
+                    "file_size": 13013,
+                    "width": 320,
+                    "height": 212
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADeAADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUl9",
+                    "file_size": 48875,
+                    "width": 800,
+                    "height": 531
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFFmkv5s2RIbhAjHRq8pSV62jH_twCAAKzEGsbHSKBSWWU_x6Xu0wHAQADAgADeQADNgQ",
+                    "file_unique_id": "AQADsxBrGx0igUl-",
+                    "file_size": 81243,
+                    "width": 1244,
+                    "height": 826
+                }
+            ],
+            "caption": "sadasdsadas",
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "text": "Like 0",
+                            "callback_data": "like_temp"
+                        }
+                    ]
+                ]
+            }
+        },
+        "chat_instance": "-3578483412999375008",
+        "data": "like_temp"
+    }
+}
+
+[2025-12-03 11:55:34] Update qabul qilindi
+
+[2025-12-03 11:55:34] Foydalanuvchi
+{
+    "chat_id": null,
+    "user_id": null,
+    "text": ""
+}
+
+[2025-12-03 11:55:34] CALLBACK QUERY
+{
+    "id": "3258330016065307946",
+    "user": 7201090018,
+    "data": "like_temp"
+}
+
+[2025-12-03 11:55:36] Callback data noto'g'ri format
+"like_temp"
+
+[2025-12-03 12:01:50] YANGI UPDATE KELDI
+{
+    "update_id": 584501204,
+    "message": {
+        "message_id": 1313,
+        "from": {
+            "id": 7201090018,
+            "is_bot": false,
+            "first_name": "Asadbek",
+            "username": "bek2001_1",
+            "language_code": "ru"
+        },
+        "chat": {
+            "id": 7201090018,
+            "first_name": "Asadbek",
+            "username": "bek2001_1",
+            "type": "private"
+        },
+        "date": 1764759711,
+        "photo": [
+            {
+                "file_id": "AgACAgIAAxkBAAIFIWkwGJ-vRJ1x5pmcpGkS_2Yj_D6AAAI8EmsbHSKBSb82Jc7Gdx2OAQADAgADcwADNgQ",
+                "file_unique_id": "AQADPBJrGx0igUl4",
+                "file_size": 1157,
+                "width": 90,
+                "height": 60
+            },
+            {
+                "file_id": "AgACAgIAAxkBAAIFIWkwGJ-vRJ1x5pmcpGkS_2Yj_D6AAAI8EmsbHSKBSb82Jc7Gdx2OAQADAgADbQADNgQ",
+                "file_unique_id": "AQADPBJrGx0igUly",
+                "file_size": 13013,
+                "width": 320,
+                "height": 212
+            },
+            {
+                "file_id": "AgACAgIAAxkBAAIFIWkwGJ-vRJ1x5pmcpGkS_2Yj_D6AAAI8EmsbHSKBSb82Jc7Gdx2OAQADAgADeAADNgQ",
+                "file_unique_id": "AQADPBJrGx0igUl9",
+                "file_size": 48875,
+                "width": 800,
+                "height": 531
+            },
+            {
+                "file_id": "AgACAgIAAxkBAAIFIWkwGJ-vRJ1x5pmcpGkS_2Yj_D6AAAI8EmsbHSKBSb82Jc7Gdx2OAQADAgADeQADNgQ",
+                "file_unique_id": "AQADPBJrGx0igUl-",
+                "file_size": 81243,
+                "width": 1244,
+                "height": 826
+            }
+        ],
+        "caption": "wqeqweqwe"
+    }
+}
+
+[2025-12-03 12:01:50] Update qabul qilindi
+
+[2025-12-03 12:01:50] Foydalanuvchi
+{
+    "chat_id": 7201090018,
+    "user_id": 7201090018,
+    "text": ""
+}
+
+[2025-12-03 12:01:50] Step tekshirildi
+{
+    "step": null
+}
+
+[2025-12-03 12:01:50] Yangi post keldi
+{
+    "message_id": 1313,
+    "from": {
+        "id": 7201090018,
+        "is_bot": false,
+        "first_name": "Asadbek",
+        "username": "bek2001_1",
+        "language_code": "ru"
+    },
+    "chat": {
+        "id": 7201090018,
+        "first_name": "Asadbek",
+        "username": "bek2001_1",
+        "type": "private"
+    },
+    "date": 1764759711,
+    "photo": [
+        {
+            "file_id": "AgACAgIAAxkBAAIFIWkwGJ-vRJ1x5pmcpGkS_2Yj_D6AAAI8EmsbHSKBSb82Jc7Gdx2OAQADAgADcwADNgQ",
+            "file_unique_id": "AQADPBJrGx0igUl4",
+            "file_size": 1157,
+            "width": 90,
+            "height": 60
+        },
+        {
+            "file_id": "AgACAgIAAxkBAAIFIWkwGJ-vRJ1x5pmcpGkS_2Yj_D6AAAI8EmsbHSKBSb82Jc7Gdx2OAQADAgADbQADNgQ",
+            "file_unique_id": "AQADPBJrGx0igUly",
+            "file_size": 13013,
+            "width": 320,
+            "height": 212
+        },
+        {
+            "file_id": "AgACAgIAAxkBAAIFIWkwGJ-vRJ1x5pmcpGkS_2Yj_D6AAAI8EmsbHSKBSb82Jc7Gdx2OAQADAgADeAADNgQ",
+            "file_unique_id": "AQADPBJrGx0igUl9",
+            "file_size": 48875,
+            "width": 800,
+            "height": 531
+        },
+        {
+            "file_id": "AgACAgIAAxkBAAIFIWkwGJ-vRJ1x5pmcpGkS_2Yj_D6AAAI8EmsbHSKBSb82Jc7Gdx2OAQADAgADeQADNgQ",
+            "file_unique_id": "AQADPBJrGx0igUl-",
+            "file_size": 81243,
+            "width": 1244,
+            "height": 826
+        }
+    ],
+    "caption": "wqeqweqwe"
+}
+
+[2025-12-03 12:02:18] YANGI UPDATE KELDI
+{
+    "update_id": 584501205,
+    "callback_query": {
+        "id": "3258330013678018331",
+        "from": {
+            "id": 7201090018,
+            "is_bot": false,
+            "first_name": "Asadbek",
+            "username": "bek2001_1",
+            "language_code": "ru"
+        },
+        "message": {
+            "message_id": 16,
+            "sender_chat": {
+                "id": -1003264838546,
+                "title": "new_channel_main",
+                "username": "newchannel001111",
+                "type": "channel"
+            },
+            "chat": {
+                "id": -1003264838546,
+                "title": "new_channel_main",
+                "username": "newchannel001111",
+                "type": "channel"
+            },
+            "date": 1764759713,
+            "edit_date": 1764759714,
+            "photo": [
+                {
+                    "file_id": "AgACAgIAAxkBAAIFIWkwGJ-vRJ1x5pmcpGkS_2Yj_D6AAAI8EmsbHSKBSb82Jc7Gdx2OAQADAgADcwADNgQ",
+                    "file_unique_id": "AQADPBJrGx0igUl4",
+                    "file_size": 1157,
+                    "width": 90,
+                    "height": 60
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFIWkwGJ-vRJ1x5pmcpGkS_2Yj_D6AAAI8EmsbHSKBSb82Jc7Gdx2OAQADAgADbQADNgQ",
+                    "file_unique_id": "AQADPBJrGx0igUly",
+                    "file_size": 13013,
+                    "width": 320,
+                    "height": 212
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFIWkwGJ-vRJ1x5pmcpGkS_2Yj_D6AAAI8EmsbHSKBSb82Jc7Gdx2OAQADAgADeAADNgQ",
+                    "file_unique_id": "AQADPBJrGx0igUl9",
+                    "file_size": 48875,
+                    "width": 800,
+                    "height": 531
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFIWkwGJ-vRJ1x5pmcpGkS_2Yj_D6AAAI8EmsbHSKBSb82Jc7Gdx2OAQADAgADeQADNgQ",
+                    "file_unique_id": "AQADPBJrGx0igUl-",
+                    "file_size": 81243,
+                    "width": 1244,
+                    "height": 826
+                }
+            ],
+            "caption": "wqeqweqwe",
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "text": "Like 0",
+                            "callback_data": "like_-1003264838546_16"
+                        }
+                    ]
+                ]
+            }
+        },
+        "chat_instance": "-3578483412999375008",
+        "data": "like_-1003264838546_16"
+    }
+}
+
+[2025-12-03 12:02:18] Update qabul qilindi
+
+[2025-12-03 12:02:18] Foydalanuvchi
+{
+    "chat_id": null,
+    "user_id": null,
+    "text": ""
+}
+
+[2025-12-03 12:02:18] CALLBACK QUERY
+{
+    "id": "3258330013678018331",
+    "user": 7201090018,
+    "data": "like_-1003264838546_16"
+}
+
+[2025-12-03 12:02:22] Callback muvaffaqiyatli bajarildi
+{
+    "key": "-1003264838546_16",
+    "liked": true
+}
+
+[2025-12-03 12:04:09] YANGI UPDATE KELDI
+{
+    "update_id": 584501206,
+    "callback_query": {
+        "id": "3258330013455367276",
+        "from": {
+            "id": 7201090018,
+            "is_bot": false,
+            "first_name": "Asadbek",
+            "username": "bek2001_1",
+            "language_code": "ru"
+        },
+        "message": {
+            "message_id": 16,
+            "sender_chat": {
+                "id": -1003264838546,
+                "title": "new_channel_main",
+                "username": "newchannel001111",
+                "type": "channel"
+            },
+            "chat": {
+                "id": -1003264838546,
+                "title": "new_channel_main",
+                "username": "newchannel001111",
+                "type": "channel"
+            },
+            "date": 1764759713,
+            "edit_date": 1764759742,
+            "photo": [
+                {
+                    "file_id": "AgACAgIAAxkBAAIFIWkwGJ-vRJ1x5pmcpGkS_2Yj_D6AAAI8EmsbHSKBSb82Jc7Gdx2OAQADAgADcwADNgQ",
+                    "file_unique_id": "AQADPBJrGx0igUl4",
+                    "file_size": 1157,
+                    "width": 90,
+                    "height": 60
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFIWkwGJ-vRJ1x5pmcpGkS_2Yj_D6AAAI8EmsbHSKBSb82Jc7Gdx2OAQADAgADbQADNgQ",
+                    "file_unique_id": "AQADPBJrGx0igUly",
+                    "file_size": 13013,
+                    "width": 320,
+                    "height": 212
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFIWkwGJ-vRJ1x5pmcpGkS_2Yj_D6AAAI8EmsbHSKBSb82Jc7Gdx2OAQADAgADeAADNgQ",
+                    "file_unique_id": "AQADPBJrGx0igUl9",
+                    "file_size": 48875,
+                    "width": 800,
+                    "height": 531
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFIWkwGJ-vRJ1x5pmcpGkS_2Yj_D6AAAI8EmsbHSKBSb82Jc7Gdx2OAQADAgADeQADNgQ",
+                    "file_unique_id": "AQADPBJrGx0igUl-",
+                    "file_size": 81243,
+                    "width": 1244,
+                    "height": 826
+                }
+            ],
+            "caption": "wqeqweqwe",
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "text": "Like 1",
+                            "callback_data": "like_-1003264838546_16"
+                        }
+                    ]
+                ]
+            }
+        },
+        "chat_instance": "-3578483412999375008",
+        "data": "like_-1003264838546_16"
+    }
+}
+
+[2025-12-03 12:04:09] Update qabul qilindi
+
+[2025-12-03 12:04:09] Foydalanuvchi
+{
+    "chat_id": null,
+    "user_id": null,
+    "text": ""
+}
+
+[2025-12-03 12:04:09] CALLBACK QUERY
+{
+    "id": "3258330013455367276",
+    "user": 7201090018,
+    "data": "like_-1003264838546_16"
+}
+
+[2025-12-03 12:04:12] Callback muvaffaqiyatli bajarildi
+{
+    "key": "-1003264838546_16",
+    "liked": false
+}
+
+[2025-12-03 12:10:18] YANGI UPDATE KELDI
+{
+    "update_id": 584501207,
+    "callback_query": {
+        "id": "3258330013564519582",
+        "from": {
+            "id": 7201090018,
+            "is_bot": false,
+            "first_name": "Asadbek",
+            "username": "bek2001_1",
+            "language_code": "uz"
+        },
+        "message": {
+            "message_id": 16,
+            "sender_chat": {
+                "id": -1003264838546,
+                "title": "new_channel_main",
+                "username": "newchannel001111",
+                "type": "channel"
+            },
+            "chat": {
+                "id": -1003264838546,
+                "title": "new_channel_main",
+                "username": "newchannel001111",
+                "type": "channel"
+            },
+            "date": 1764759713,
+            "edit_date": 1764759742,
+            "photo": [
+                {
+                    "file_id": "AgACAgIAAxkBAAIFIWkwGJ-vRJ1x5pmcpGkS_2Yj_D6AAAI8EmsbHSKBSb82Jc7Gdx2OAQADAgADcwADNgQ",
+                    "file_unique_id": "AQADPBJrGx0igUl4",
+                    "file_size": 1157,
+                    "width": 90,
+                    "height": 60
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFIWkwGJ-vRJ1x5pmcpGkS_2Yj_D6AAAI8EmsbHSKBSb82Jc7Gdx2OAQADAgADbQADNgQ",
+                    "file_unique_id": "AQADPBJrGx0igUly",
+                    "file_size": 13013,
+                    "width": 320,
+                    "height": 212
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFIWkwGJ-vRJ1x5pmcpGkS_2Yj_D6AAAI8EmsbHSKBSb82Jc7Gdx2OAQADAgADeAADNgQ",
+                    "file_unique_id": "AQADPBJrGx0igUl9",
+                    "file_size": 48875,
+                    "width": 800,
+                    "height": 531
+                },
+                {
+                    "file_id": "AgACAgIAAxkBAAIFIWkwGJ-vRJ1x5pmcpGkS_2Yj_D6AAAI8EmsbHSKBSb82Jc7Gdx2OAQADAgADeQADNgQ",
+                    "file_unique_id": "AQADPBJrGx0igUl-",
+                    "file_size": 81243,
+                    "width": 1244,
+                    "height": 826
+                }
+            ],
+            "caption": "wqeqweqwe",
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "text": "Like 1",
+                            "callback_data": "like_-1003264838546_16"
+                        }
+                    ]
+                ]
+            }
+        },
+        "chat_instance": "-3578483412999375008",
+        "data": "like_-1003264838546_16"
+    }
+}
+
+[2025-12-03 12:10:18] Update qabul qilindi
+
+[2025-12-03 12:10:18] Foydalanuvchi
+{
+    "chat_id": null,
+    "user_id": null,
+    "text": ""
+}
+
+[2025-12-03 12:10:18] CALLBACK QUERY
+{
+    "id": "3258330013564519582",
+    "user": 7201090018,
+    "data": "like_-1003264838546_16"
+}
+
+[2025-12-03 12:10:21] Callback muvaffaqiyatli bajarildi
+{
+    "key": "-1003264838546_16",
+    "liked": false
+}
+
