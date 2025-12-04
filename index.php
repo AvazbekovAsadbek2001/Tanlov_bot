@@ -104,9 +104,11 @@ if (isset($update['callback_query'])) {
 
     // Obuna tekshirish
     $not_member = [];
+
     if (!isUserMember($competition['main_channel'], $userId, $bot_token)) {
         $not_member[] = $competition['main_channel'];
     }
+
     foreach ($competition['required_channels'] ?? [] as $ch) {
         if (!isUserMember($ch, $userId, $bot_token)) $not_member[] = $ch;
     }
@@ -119,13 +121,13 @@ if (isset($update['callback_query'])) {
     }
 
     // Like qayta ishlash
-    $parts = explode('_', $data, 3);
-    if (count($parts) !== 3) {
+    $parts = explode('_', $data, 4);
+    if (count($parts) !== 4) {
         log_debug("Callback data noto'g'ri format", $data);
         exit;
     }
-    [$cmd, $channelId, $messageId] = $parts;
-    $key = "{$channelId}_{$messageId}";
+    [$cmd, $channelId, $messageId, $competition_id] = $parts;
+    $key = "{$channelId}_{$messageId}_{$competition_id}";
 
     $likesData = file_exists($likesFile) ? json_decode(file_get_contents($likesFile), true) : [];
     if (!isset($likesData['channels'])) $likesData['channels'] = [];
@@ -140,7 +142,6 @@ if (isset($update['callback_query'])) {
         $likesData['channels'][$key]['count'] = ($likesData['channels'][$key]['count'] ?? 0) + 1;
         $likesData['total_likes']++;
 
-        // Faylga yozish (lock bilan)
         $fp = fopen($likesFile, 'c+');
         if (flock($fp, LOCK_EX)) {
             ftruncate($fp, 0);
@@ -239,9 +240,10 @@ if (isset($update['message']['photo']) || !empty($update['message']['text'])) {
     }
 
     $messageId = $result['result']['message_id'];
+    $competition = getActiveCompetition($chat_id);
 
     // 3. DARHOL to'g'ri callback_data bilan almashtiramiz
-    $correctCallback = "like_{$realChannelId}_{$messageId}";
+    $correctCallback = "like_{$realChannelId}_{$messageId}_{$competition['id']}";
 
     $finalKeyboard = [
         'inline_keyboard' => [[
